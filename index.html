@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+ <!-- این بخش برای ایکون سایت است -->
+<div class="hidden">
+ <svg id="bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+   <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+ </svg>
+
+ <svg id="down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+   <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0-3-3m3 3 3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+ </svg>
+
+ <svg id="bell-slash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.143 17.082a24.248 24.248 0 0 0 3.844.148m-3.844-.148a23.856 23.856 0 0 1-5.455-1.31 8.964 8.964 0 0 0 2.3-5.542m3.155 6.852a3 3 0 0 0 5.667 1.97m1.965-2.277L21 21m-4.225-4.225a23.81 23.81 0 0 0 3.536-1.003A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6.53 6.53m10.245 10.245L6.53 6.53M3 3l3.53 3.53" />
+</svg> 
+
+<svg id="chat" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+</svg> 
+
+<svg id="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+</svg>
+
+<svg id="tooth" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+</svg>
+
+
+</div>
+ <!-- این بخش برای موبایل سایت است  -->
+  <div id="Sidemenu" class="bg-white w-3/4 h-screen hidden p-8">+
+    <!-- ایکون گوشی برای خروج  -->
+    <div>
+     <div class=" justify-items-end text-4xl font-bold px-8">
+        <svg class="w-8 h-8 mb-3 mt-none">
+          <use href="#down"></use>
+         </svg>
+     </div>
+    </div> 
+     <h1 class="text-4xl font-bold px-8 ">Qidexa</h1>
+    <ul class="text-2xl grid gap-8 mt-10 py-8 px-8 font-black">
+      <li>Home</li>
+      <li>Oroducts</li>
+      <li>About</li>
+    </ul>
+  </div>
+
+    <!-- این بخش هدر یا سر سایت است -->
+    <header class="bg-[#013F3A] px-10 lg:px-30 py-10 ">
+      <!-- این برای منو و لوگوی سایت است -->
+    <nav class="hidden lg:flex justify-between items-center">
+
+        <h3 class="text-white">Qidexa</h3>
+
+        <ul class="flex gap-6 text-white">
+          <li>home</li>
+          <li>feature</li>
+          <li>pricing</li>
+          <li>contact us</li>
+          <li>blog</li>
+        </ul>
+        <div class="flex gap-4">
+          <button class="text-emerald-800 hover:bg-sky-400 transition-all hover:scale-120 hover:text-white hover:cursor-pointer bg-white px-4 py-2 rounded-full ">
+            login
+          </button>
+
+          <button class="text-emerald-800 hover:bg-sky-400 transition-all hover:scale-120 hover:text-white hover:cursor-pointer bg-white px-4 py-2 rounded-full ">
+            get started
+          </button>
+        </div>
+      </nav>
+      <!-- این نو منوی من در  موبایل است  -->
+      <nav class=" flex lg:hidden items-center justify-between">
+        <h2 class="text-white text-2xl">Qidexa</h2>
+        <i id="bars" class=" text-white text-2xl fa-solid fa-bars"></i>
+      </nav>
+      <!-- بخش برای هیرو سایت است  -->
+    <sectio class="flex  flex-col gap-14 lg:flex-row mt-28 lg:items-center justify-between ">
+      <!-- سمت چپ -->
+      <div class="bg-[#013F3A] w-full lg:w-1/2 text-white flex flex-col gap-8 items-start">
+        <h1 class="text-5xl font-bold  text-white">smart solution for <br> financial success </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Consequaturaut tempora cumque perferendis  sapiente maiores error<br> ab voluptate a esse?</p>
+          <button class="text-emerald-800 hover:bg-sky-400 transition-all hover:scale-120 hover:text-white hover:cursor-pointer bg-white px-4 py-2 rounded-full ">
+            get started
+          </button>
+          <!-- این دیو برای سه تا پاینی است  -->
+           <div class="flex gap-10 lg:gap-28 text-white">
+            <!-- این دیو اول -->
+            <div>
+              <h2>10+</h2>
+              <p>yers Exprience</p>
+            </div>
+            <!-- این دیو دوم -->
+            <div>
+              <h2>10+</h2>
+              <p>yers Exprience</p>
+            </div>
+            <!-- این دیو سوم -->
+            <div> 
+              <h2>10+</h2>
+              <p>yers Exprience</p>
+            </div>
+
+           </div>
+
+
+      </div>
+
+      <!-- سمت راست -->
+      <div class="bg-red-400 w-full lg:w-[40%]"> 
+        <img class="w-full" src="imgs/ask.png" alt="cart bank tread">
+      </div>
+      
+
+    </section>
+
+    </header>
+     <!-- این بخش برای میانی سایت است -->
+    <main>
+      <!-- گرید بندی  -->
+      <section class="px-10 lg:px-30 grid gap-4 mt-20">
+        <h1 class="text-5xl mb-10 font-bold text-center">Our set of banking <br>srevices and offerings.</h1>
+        <!-- ایت دیو برای بالا است  -->
+        <div class="grid grid-col-1 lg:grid-cols-2 gap-4">
+          <div class="p-8 bg-gray-100">
+              <svg class="w-6 h-6 mb-3 mt-none">
+                <use href="#bell"></use>
+              </svg>
+             <h3 class="text-3xl font-bold">Featur One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi amet aperiam unde temporibus commodi quas expedita, mollitia deleniti rerum?
+            </p>
+          </div>
+          <div class="p-8 bg-gray-100">
+             <svg class="w-6 h-6 mb-3 mt-none">
+                <use href="#down"></use>
+              </svg>
+             <h3 class="text-3xl font-bold">Featur Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi amet aperiam unde temporibus commodi quas expedita, mollitia deleniti rerum?
+            </p>
+          </div>
+        </div>
+
+        <!-- این دیو برای پاین است  -->
+         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div class="p-8 bg-gray-100">
+            <svg class="w-6 h-6 mb-3 mt-none">
+                <use href="#bell-slash"></use>
+              </svg>
+             <h3 class="text-3xl font-bold">Featur Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi amet aperiam unde temporibus commodi quas expedita, mollitia deleniti rerum?
+            </p>
+          </div>
+          
+          <div class="p-8 bg-gray-100"> 
+            <svg class="w-6 h-6 mb-3 mt-none">
+                <use href="#check"></use>
+              </svg>
+            <h3 class="text-3xl font-bold">Featur Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi amet aperiam unde temporibus commodi quas expedita, mollitia deleniti rerum?
+            </p>
+          </div>
+
+          <div class="p-8 bg-gray-100">
+            <svg class="w-6 h-6 mb-3 mt-none">
+                <use href="#tooth"></use>
+              </svg>
+            <h3 class="text-3xl font-bold">Featur Five</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi amet aperiam unde temporibus commodi quas expedita, mollitia deleniti rerum?
+            </p>
+          </div>
+
+         </div>
+      </section>
+   
+<!--  سکشن دوم  -->
+    <section class="bg-[#013F3A] px-10 lg:px-30 py-10 mt-20">
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-10">
+         <!-- دیو 1 -->
+    <div class="grid gap-8">
+      <div class="bg-[#174F4A] p-8 rounded-3xl">
+        <p class="text-white"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Dicta voluptatibus alias dignissimos!</p>
+      </div>
+      <div class="bg-[#174F4A] p-8 rounded-3xl">
+        <p class="text-white"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Dicta voluptatibus alias dignissimos!</p>
+      </div>
+    </div>
+           <!-- دیو 2 -->
+    <div >
+      <img class="rounded-3xl" src="./imgs/sit2.png" alt="traid">
+    </div>
+           <!-- دیو 3 -->
+    <div class="grid gap-8">
+      <div class="bg-[#174F4A] p-8 rounded-3xl">
+        <p class="text-white"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Dicta voluptatibus alias dignissimos!</p>
+      </div>
+      <div class="bg-[#174F4A] p-8 rounded-3xl">
+        <p class="text-white"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Dicta voluptatibus alias dignissimos!</p>
+      </div>
+    </div>
+
+  </div>
+
+    </section>  
+
+     </main>
+
+     <script src="src/index.js"></script>
+     
+  </body>
+</html>
